@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Tracking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='cart.jpeg') }}" type="image/jpeg">
+
+
+</head>
+
+
+<body>
+    <h1>Price Tracking, Smart Shopping</h1>
+    <h2>Save more with Back Market, a leading market place for refurbished electronics</h2>
+    <p>Find the most affordable devices with excellent quality that fit your needs just by a few steps</p>
+    <form action="/search" method="get">
+        <label for="product">What product do you want to search for? </label>
+        <input type="text" id="product" name="product" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
